@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1 id="pealkiri"></h1>
+    <input id="tekst" type="text">
+    <button id="nupp">Suru nüüd!</button>
+    <script>
+        console.log("Tere!");
+        var tekstikast = document.getElementById("tekst");
+        var nupp = document.getElementById("nupp");
+        
+        nupp.addEventListener("click", function(e){
+            console.log(e);
+            //alert(tekstikast.value);
+            document.getElementById("pealkiri").innerHTML = tekstikast.value;
+        });
+        
+        //Massiiv - array[];
+        var array1 = [1, "hi", true, []];
+
+        //Tsükkel - for(){};
+        for(var i = 0; i < array1.length; i++){
+            console.log(array1[i]);
+        }
+        
+        document.getElementById("pealkiri").innerHTML = document.title;
+        
+    </script>
+</body>
+</html>

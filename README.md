@@ -1,2 +1,0 @@
-# prog-javascript
-Javascript
